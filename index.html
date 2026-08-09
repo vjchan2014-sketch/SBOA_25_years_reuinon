@@ -106,6 +106,34 @@
   .btn-ghost:hover{background:rgba(245,166,35,0.12);}
 
   /* ---------- REMEMBER WHEN ---------- */
+  /* ---------- DATE ANNOUNCEMENT ---------- */
+  .announce{
+    background:
+      radial-gradient(ellipse at 15% 20%, rgba(245,166,35,0.14), transparent 55%),
+      radial-gradient(ellipse at 85% 80%, rgba(245,166,35,0.1), transparent 55%),
+      var(--navy-deep);
+    text-align:center;padding:90px 0;border-top:3px solid var(--gold);border-bottom:3px solid var(--gold);
+  }
+  .announce-badge{
+    display:inline-block;background:var(--gold);color:var(--navy-deep);font-weight:700;
+    font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:8px 20px;border-radius:999px;margin-bottom:22px;
+  }
+  .announce-title{color:#fff;font-size:clamp(2rem,5vw,3.2rem);}
+  .announce-date{
+    display:inline-flex;align-items:center;gap:18px;margin:36px auto;
+    background:rgba(255,255,255,0.05);border:2px dashed var(--gold);border-radius:16px;
+    padding:24px 44px;
+  }
+  .announce-date .day{font-family:'Anton',sans-serif;font-size:1.3rem;color:var(--gold-light);letter-spacing:.1em;}
+  .announce-date .num{font-family:'Anton',sans-serif;font-size:4.2rem;color:#fff;line-height:.9;}
+  .announce-date .month{font-family:'Anton',sans-serif;font-size:1.3rem;color:var(--gold-light);line-height:1.05;text-align:left;letter-spacing:.05em;}
+  @media(max-width:480px){
+    .announce-date{gap:12px;padding:20px 24px;}
+    .announce-date .num{font-size:3rem;}
+  }
+  .announce-sub{max-width:560px;margin:0 auto;font-size:1rem;line-height:1.7;color:#d8dfec;}
+  .announce .cta-row{margin-top:32px;}
+
   .remember{background:var(--paper);color:var(--navy-deep);}
   .sec-head{text-align:center;max-width:640px;margin:0 auto 56px;}
   .sec-head .eyebrow{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;color:#c67a12;font-weight:700;margin-bottom:14px;display:block;}
@@ -194,6 +222,7 @@
   <div class="nav-inner">
     <a href="#top" class="brand">SBOA <span>'02</span></a>
     <nav class="links">
+      <a href="#announce">Date Announced</a>
       <a href="#remember">Remember When</a>
       <a href="#savedate">Save the Date</a>
       <a href="#join">Tag &amp; Join</a>
@@ -215,7 +244,7 @@
     </div>
 
     <div class="info-strip">
-      <div class="info-item"><b>Date</b><span>Coming Soon</span></div>
+      <div class="info-item"><b>Date</b><span>7 August 2027</span></div>
       <div class="info-item"><b>Time</b><span>Coming Soon</span></div>
       <div class="info-item"><b>Venue</b><span>Coming Soon</span></div>
       <div class="info-item"><b>Vibe</b><span>Reconnect · Laugh · Relive · Repeat</span></div>
@@ -228,7 +257,23 @@
   </div>
 </section>
 
-<!-- ===================== REMEMBER WHEN ===================== -->
+<!-- ===================== DATE ANNOUNCEMENT ===================== -->
+<section class="announce" id="announce">
+  <div class="container announce-inner">
+    <div class="announce-badge reveal">📣 It's Official</div>
+    <h2 class="announce-title reveal">Mark Your Calendars!</h2>
+    <div class="announce-date reveal">
+      <span class="day">SAT</span>
+      <span class="num">07</span>
+      <span class="month">AUG<br>2027</span>
+    </div>
+    <p class="announce-sub reveal">The SBOA Batch of 2002 Silver Jubilee Reunion is confirmed for <strong>Saturday, 7 August 2027</strong>. Time &amp; venue details are on their way — until then, spread the word and tag every batchmate you can find.</p>
+    <div class="cta-row reveal">
+      <a href="#join" class="btn btn-solid">Tag Your Classmates &amp; Join Us!</a>
+    </div>
+  </div>
+</section>
+
 <section class="remember" id="remember">
   <div class="container">
     <div class="sec-head reveal">
@@ -277,11 +322,11 @@
     </div>
 
     <div class="date-grid reveal">
-      <div class="date-card"><div class="ic">📅</div><b>Date</b><span>Coming Soon</span></div>
+      <div class="date-card"><div class="ic">📅</div><b>Date</b><span>7 August 2027</span></div>
       <div class="date-card"><div class="ic">🕒</div><b>Time</b><span>Coming Soon</span></div>
       <div class="date-card"><div class="ic">📍</div><b>Venue</b><span>Coming Soon</span></div>
     </div>
-    <p class="note reveal">The organising committee is finalising details &mdash; the moment they're locked in, every batchmate on the list gets the word first. Tag your classmates below so no one misses it.</p>
+    <p class="note reveal">The date is locked — Saturday, 7 August 2027. Time and venue are being finalised and will be announced soon. Tag your classmates below so no one misses it.</p>
   </div>
 </section>
 
@@ -294,14 +339,15 @@
         <h2 style="margin-top:14px;font-size:clamp(1.8rem,4vw,2.6rem);color:var(--navy-deep);">Don't Miss This Reunion!</h2>
         <p style="margin-top:14px;font-size:1rem;line-height:1.7;color:#4b4636;">Know a batchmate who's lost touch? Share this page, tag them, and pull the whole gang back together for the Silver Jubilee. The more of us in the room, the better the stories.</p>
         <div class="share-row">
-          <a href="https://chat.whatsapp.com/E7foaXsX3O87nJJbXQL5GW" target="_blank" rel="noopener" class="share-btn">📤 Join WhatsApp Group</a>
+          <a href="#" class="share-btn">📤 Share on WhatsApp</a>
           <a href="https://www.facebook.com/share/g/18yKLoxdc3/" target="_blank" rel="noopener" class="share-btn">📘 Facebook Group</a>
-          <a href="https://www.instagram.com/sboam2002silverjubliee?utm_source=qr&amp;igsh=MXAzeWw4bzl1NGEzdg==" target="_blank" rel="noopener" class="share-btn">📸 Follow on Instagram</a>
+          <a href="https://www.instagram.com/sboam2002silverjubliee" target="_blank" rel="noopener" class="share-btn">📸 Instagram</a>
         </div>
       </div>
 
       <form class="interest-form reveal" id="interestForm">
         <h3 style="font-size:1.2rem;color:var(--navy-deep);margin-bottom:4px;">Count Me In!</h3>
+        <p style="margin:0 0 6px;font-size:.85rem;color:#6a6248;">📅 Reunion confirmed for <strong>Saturday, 7 August 2027</strong></p>
         <input type="text" name="fullName" placeholder="Full name" required>
         <input type="text" name="contact" placeholder="Contact number" required>
         <input type="email" name="email" placeholder="Mail ID">
@@ -312,20 +358,16 @@
           <option value="" disabled selected>RSVP status</option>
           <option value="Yes">Yes, I'll be there</option>
           <option value="Maybe">Maybe</option>
-          <option value="No">Can't make it, but count me in spirit</option>
+          <option value="No">No</option>
         </select>
         <select name="journey">
           <option value="" disabled selected>Willing to share the journey?</option>
           <option value="Yes">Yes</option>
           <option value="No">No</option>
         </select>
-        <select name="dates">
-          <option value="" disabled selected>Preferred date</option>
-          <option value="Jul 10, 2027">10 July 2027</option>
-          <option value="Aug 7, 2027">7 August 2027</option>
-        </select>
+        <input type="hidden" name="dates" value="Aug 7, 2027">
         <button type="submit" class="btn btn-solid" id="submitBtn">Notify Me</button>
-        <span class="form-msg" id="formMsg">✓ Thanks! You're on the list — we'll tag you the moment the date is locked in.</span>
+        <span class="form-msg" id="formMsg">✓ Thanks! You're on the list for 7 August 2027 — we'll keep you posted on time and venue.</span>
         <span class="form-msg" id="formErr" style="color:#b3261e;">Something went wrong — please try again in a moment.</span>
       </form>
     </div>
@@ -339,9 +381,9 @@
     <p class="school">S.B.O.A. Matriculation &amp; Higher Secondary School</p>
     <p class="addr">R-9, 17th Street, Anna Nagar West Extension, Chennai &ndash; 600101 &nbsp;·&nbsp; Managed by SBOA Educational Trust</p>
     <div class="socials">
-      <a href="https://chat.whatsapp.com/E7foaXsX3O87nJJbXQL5GW" target="_blank" rel="noopener" aria-label="WhatsApp">☏</a>
+      <a href="#" aria-label="WhatsApp">☏</a>
       <a href="https://www.facebook.com/share/g/18yKLoxdc3/" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-      <a href="https://www.instagram.com/sboam2002silverjubliee?utm_source=qr&amp;igsh=MXAzeWw4bzl1NGEzdg==" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="https://www.instagram.com/sboam2002silverjubliee" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
     </div>
     <div class="copyright">© 2027 SBOA Batch of 2002 &middot; Silver Jubilee Reunion Committee</div>
   </div>
@@ -349,7 +391,7 @@
 
 <script>
 // Paste the Google Apps Script Web App URL here after deploying it (see deployment notes).
-const SCRIPT_URL ="https://script.google.com/macros/s/AKfycbwh8o-8Xce2YKkN_HwXaVmO4qnArAB-vf4C0cH8p-26xwGx8ZKKVZQ0LW_VqtuLiGi0/exec";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxDAmvoyHhQyh7BoL9dXMRLpu-9IRpGkFyXZbsisoon5PEiapTCDO9398CQ4b_zQGjl/exec";
 
 document.getElementById('interestForm').addEventListener('submit', function(e){
   e.preventDefault();
